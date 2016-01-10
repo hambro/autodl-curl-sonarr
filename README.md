@@ -1,7 +1,7 @@
 # autodl-curl-sonarr
 Script to use as upload-command for autodl-irssi to post torrents to Sonarr
 
-Obviously you will need autodl-irssi (https://github.com/autodl-community) and Sonarr (https://sonarr.tv/) installed for this to work.
+Obviously you will need autodl-irssi (https://github.com/autodl-community) and Sonarr (https://sonarr.tv/) installed for this to work.  You will also need curl.
 
 Download the file autodl-curl-sonarr.sh and put it wherever you want.  You may need to edit the last line of the script with the address for Sonarr.  But default it is "http://localhost:8989/api/release/push".  See https://github.com/Sonarr/Sonarr/wiki/API.  Make the script executable for the user running autodl-irssi 
 
