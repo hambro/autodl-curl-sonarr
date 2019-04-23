@@ -12,3 +12,6 @@ upload-command = /path/to/autodl-curl-sonarr.sh<br>
 upload-args = "$(TorrentName)" "$(TorrentUrl)" YOUR_SONARR_API_KEY
 
 You can set up autodl-irssi filters to simply match everything and let Sonarr decide what it should download based upon your Sonarr configuration.
+
+
+Note on lidarr support: Lidarr needs api/v1/push/release rather than just api/push/release like radarr/sonarr.
