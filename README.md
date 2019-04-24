@@ -1,4 +1,4 @@
-# autodl-curl-sonarr
+# autodl-curl-sonarr and autodl-curl-radarr
 Script to use as upload-command for autodl-irssi to post torrents to Sonarr and Radarr.
 
 Obviously you will need [autodl-irssi](https://github.com/autodl-community), [Sonarr](https://sonarr.tv/) and/or [Radarr](https://radarr.video/) installed for this to work. You will also need curl.
