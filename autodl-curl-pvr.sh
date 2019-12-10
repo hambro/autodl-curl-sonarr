@@ -1,12 +1,11 @@
 #!/bin/bash
 
-pvr=$1
 title=$2
 downloadUrl=$3
 apiKey=$4
 date=$(date -u +"%Y-%m-%d %H:%M:%SZ")
 indexer=$5
-apiUrl="null"
+apiUrl=$1
 
 post_release() {
     {
@@ -15,17 +14,9 @@ post_release() {
 }
 
 get_api_url() {
-    if [ -z "$pvr" ]; then
-        echo 'No PVR set'
+    if [ -z "$apiUrl" ]; then
+        echo 'No API URL set'
         exit
-    fi
-
-    if [ "$pvr" == "lidarr" ]; then
-        apiUrl="http://localhost:8686/api/v1/release/push"
-    elif [ "$pvr" == "radarr" ]; then
-        apiUrl="http://localhost:7878/api/release/push"
-    elif [ "$pvr" == "sonarr" ]; then
-        apiUrl="http://localhost:8989/api/release/push"
     fi
 }
 
